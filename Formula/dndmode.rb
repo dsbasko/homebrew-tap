@@ -32,7 +32,12 @@ class Dndmode < Formula
   end
 
   test do
-    # Go's flag package prints usage and exits 2; assert the binary runs.
-    assert_match "timer", shell_output("#{bin}/dndmode --help 2>&1", 2)
+    # dndmode is a cgo/AppKit binary; running it under the sandboxed test
+    # environment blocks on window-server framework init, so instead verify the
+    # install step applied the ad-hoc signature with the stable identifier that
+    # Accessibility (TCC) depends on.
+    assert_path_exists bin/"dndmode"
+    assert_match "Identifier=com.dsbasko.dndmode",
+      shell_output("codesign -dvv #{bin}/dndmode 2>&1")
   end
 end
