@@ -1,8 +1,8 @@
 class Rmd < Formula
   desc "Render a markdown file into a self-contained HTML page in the browser"
   homepage "https://github.com/dsbasko/rmd"
-  url "https://github.com/dsbasko/rmd/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "52cefe84673a83be68267d32d5de71f94716c7302b1873775cc9c1e04ba90f69"
+  url "https://github.com/dsbasko/rmd/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "d27aa8e554c16a44e39ada6c771238200d136c77ca625239d71866668610a1dd"
   license "MIT"
   head "https://github.com/dsbasko/rmd.git", branch: "main"
 
