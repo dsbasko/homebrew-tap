@@ -1,8 +1,8 @@
 class Dndmode < Formula
   desc "Keep macOS awake and shield all displays with a black lock overlay"
   homepage "https://github.com/dsbasko/dndmode"
-  url "https://github.com/dsbasko/dndmode/archive/refs/tags/v3.3.0.tar.gz"
-  sha256 "e6d77a769c240a45c2ff7583e5367deffcc07a70b6c11caac32265819200ca5c"
+  url "https://github.com/dsbasko/dndmode/archive/refs/tags/v3.3.1.tar.gz"
+  sha256 "0b3637150dae0a772da1eac54ed8968d8c70a6151177ffdab76da891908b5996"
   license "MIT"
   head "https://github.com/dsbasko/dndmode.git", branch: "main"
 
